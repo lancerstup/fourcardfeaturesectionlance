@@ -1,0 +1,172 @@
+
+.main-container{
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+    margin-top:4.6875rem;
+    height:965px;
+    width:310px;
+
+> *{
+    flex:1;
+}
+
+> .main-items{
+    margin-top:1.5262rem;
+    padding:1.875rem 1.5625rem 1.5625rem 1.5625rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    }
+> .one{
+    border-top:4px solid $Cyan;
+    margin-top:0;
+
+}
+> .two{
+    border-top:4px solid $Red
+    
+
+}
+> .three{
+    border-top:4px solid $Orange;
+   
+
+}
+> .four{
+    border-top:4px solid $Blue;
+    
+
+}
+
+> .main-items > h3{
+    color:$VeryDarkBlue;
+    margin-top:0;
+    margin-bottom:0.5rem;
+    font-size:1.2rem;
+    
+
+}
+
+> .main-items > p{
+    margin-top:0;
+    font-size:0.8rem;
+    color:$GrayishBlue;
+    
+}
+
+> .main-items > .img-container{
+    margin-top:2.5rem;
+    display:block;
+    text-align: right;
+}
+
+> .main-items > .img-container > img{
+    height:55px;
+}
+
+
+  
+}
+
+
+
+
+
+
+//DESKTOP//
+
+.main-container{
+@include breakpoint-up(large){
+    margin-top:1.875rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:1110px;
+    height:530px;
+
+> *{
+    flex:1;
+}
+
+> .main-items{
+    height:180px;
+    width:290px;
+    
+    
+}
+
+> .desktop-container > .main-items{
+    height:180px;
+    width:290px;
+    margin-top:1.5262rem;
+    padding:1.875rem 1.5625rem 1.5625rem 1.5625rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+> .one{
+    border-top:4px solid $Cyan;
+    margin-top:0;
+    margin-right: 2rem;
+
+}
+
+> .desktop-container > .two{
+    margin-top:0;
+    border-top:4px solid $Red
+    
+
+}
+ 
+> .desktop-container > .three{
+    margin-top:1.875rem;
+    border-top:4px solid $Orange;
+   
+
+}
+
+> .four{
+    margin-top:0;
+    margin-left: 2rem;
+    border-top:4px solid $Blue;
+    
+
+}
+
+> .desktop-container > .main-items > h3{
+    color:$VeryDarkBlue;
+    margin-top:0;
+    margin-bottom:0.8rem;
+    font-size:1.2rem;
+    
+
+}
+
+> .main-items > p{
+    line-height: 1.6;
+}
+
+> .desktop-container > .main-items > p{
+    line-height: 1.6;
+    margin-top:0;
+    font-size:0.8rem;
+    color:$GrayishBlue;
+    
+}
+
+> .desktop-container > .main-items > .img-container{
+    margin-top:2.5rem;
+    display:block;
+    text-align: right;
+}
+
+> .desktop-container > .main-items > .img-container > img{
+    height:55px;
+}
+
+
+    
+}
+}
